@@ -38,6 +38,7 @@
             </ContentTemplate>
             <Triggers>
                 <asp:AsyncPostBackTrigger ControlID="ddlProducts"/>
+                <asp:PostBackTrigger ControlID="btnAdd"/>
             </Triggers>
         </asp:UpdatePanel>
     </form>
