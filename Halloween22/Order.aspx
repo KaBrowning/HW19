@@ -13,7 +13,8 @@
     </header>
     <section>
     <form id="form1" runat="server">
-
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
         <label>Please select a product&nbsp;</label>
         <asp:DropDownList ID="ddlProducts" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="ProductId">
         </asp:DropDownList>
