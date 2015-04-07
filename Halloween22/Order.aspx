@@ -36,6 +36,9 @@
                 </div>
                 <asp:Image ID="imgProduct" runat="server" /> 
             </ContentTemplate>
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="ddlProducts"/>
+            </Triggers>
         </asp:UpdatePanel>
     </form>
     </section>        
