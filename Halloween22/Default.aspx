@@ -93,7 +93,11 @@
                     <asp:BoundField DataField="CategoryId" HeaderText="CatID" />
                   </Columns>
                 </asp:GridView>
-                
+                <asp:UpdateProgress runat="server">
+                    <ProgressTemplate>
+                        <div class="spinner"><img src="Images/spinner.gif" alt="Please Wait"/>Loading...</div>
+                    </ProgressTemplate>
+                </asp:UpdateProgress>
               </ContentTemplate>
               <Triggers>
                 <asp:AsyncPostBackTrigger ControlID="grdProducts" EventName="SelectedIndexChanged" />
